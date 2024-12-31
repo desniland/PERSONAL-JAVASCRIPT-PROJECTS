@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Adding a heading with my name -->
+        <h1 class="calculator-title">BILLY_CALC</h1>
+        
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="buttons">
+            <!-- this labels the number Buttons -->
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="clearResult()">C</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('/')">÷</button>
+
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('*')">×</button>
+
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendValue('-')">−</button>
+            <button onclick="appendValue('+')">+</button>
+
+            <!-- display advanced Operations buttons -->
+            <button onclick="calculatePercentage()">%</button>
+	    <button onclick="calculateSquareRoot()">√</button>
+            <button onclick="calculateExponent()">xʸ</button>
+	    <button onclick="calculatePower()">x²</button>
+            <button onclick="calculateSine()">sin</button>
+            <button onclick="calculateCosine()">cos</button>
+            <button onclick="calculateTangent()">tan</button>
+            <button onclick="calculateLn()">ln</button>
+	    <button onclick="calculateLog()">log</bu
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
