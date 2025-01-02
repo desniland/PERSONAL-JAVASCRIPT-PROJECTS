@@ -15,14 +15,16 @@ function clearResult() {
 // Evaluate and display the result of a calculation entered by the user
 // Retrieves the HTML element with the ID "result"
 // Handle potential errors during the calculation.
-//
+
 function calculateResult() {
-    const resultField = document.getElementById("result");
-    try {
-        resultField.value = eval(resultField.value);
-    } catch (error) {
-        resultField.value = "Error";
-    }
+  const resultField = document.getElementById("result");
+  try {
+// Use mathjs to evaluate the expression
+    const result = mathjs.evaluate(resultField.value); 
+    resultField.value = result; 
+  } catch (error) {
+    resultField.value = "Error"; 
+  }
 }
 
 // calculate and display the square root of a number entered by the user
